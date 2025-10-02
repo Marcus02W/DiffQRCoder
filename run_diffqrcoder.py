@@ -14,7 +14,7 @@ def parse_arguments() -> Namespace:
     parser.add_argument(
         "--controlnet_ckpt",
         type=str,
-        default="checkpoints/control_v1p_sd15_qrcode_monster"
+        default="DionTimmer/controlnet_qrcode-control_v1p_sd15"
     )
     parser.add_argument(
         "--pipe_ckpt",
@@ -81,7 +81,7 @@ def parse_arguments() -> Namespace:
     parser.add_argument(
         "--device",
         type=str,
-        default="cuda"
+        default="cpu"
     )
     parser.add_argument(
         "--output_path",
