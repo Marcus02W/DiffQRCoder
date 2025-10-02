@@ -81,7 +81,7 @@ def parse_arguments() -> Namespace:
     parser.add_argument(
         "--device",
         type=str,
-        default="cpu"
+        default="cuda"
     )
     parser.add_argument(
         "--output_path",
